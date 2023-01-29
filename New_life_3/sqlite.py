@@ -20,10 +20,6 @@ class Database:
         with self.connection:
             return self.cursor.execute("""SELECT user_id FROM users_bot WHERE user_id = ?""", (user_id, )).fetchall()
 
-    # if not user:
-    #     cur.execute("INSERT INTO profile VALUES(?);", (user_id))
-    #     db.commit()
-
     def edit_profile(self, user_id, full_name):
         with self.connection:
             return self.cursor.execute("INSERT INTO 'users_bot' ('user_id', 'full_name') VALUES(?, ?)", (user_id, full_name, ))
@@ -35,7 +31,6 @@ class Database:
     def local(self, user_id, latitude, longitude):
         with self.connection:
             return self.cursor.execute("""UPDATE 'users_bot' SET user_id = ? WHERE 'latitude' = ? AND 'longitude' = ?""", (user_id, latitude, longitude))
-    #
 
     def check_city_user(self, latitude, longitude, user_id):
         with self.connection:
@@ -46,10 +41,6 @@ class Database:
         with self.connection:
             return self.cursor.execute("""UPDATE users_bot SET latitude = ?, longitude = ? WHERE user_id = ?""",
                                        (latitude, longitude, user_id))
-    #
-    # def city_user(self, city):
-    #     with self.connection:
-    #         return self.cursor.execute("INSERT INTO 'users' ('city') VALUES(?)", (city,))
 
     def set_active(self, user_id, active):
         with self.connection:
