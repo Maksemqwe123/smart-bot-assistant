@@ -23,11 +23,11 @@ activate.bat
 
 3.Open config and paste the following options:
 
-•OPEN_WEATHER_TOKEN - Api token weathers [api weather](https://openweathermap.org/api)
+â€¢OPEN_WEATHER_TOKEN - Api token weathers [api weather](https://openweathermap.org/api)
 
-•BOT_TOKEN - Bot token received from [BotFather](https://t.me/BotFather)
+â€¢BOT_TOKEN - Bot token received from [BotFather](https://t.me/BotFather)
 
-•ADMIN_ID - ID of the admin who will have access to the bug reports analysis
+â€¢ADMIN_ID - ID of the admin who will have access to the bug reports analysis
 
 ---
 4.Download libraries and modules
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ```
 ---
 
-5.Run Programs[weather_tg_bot](https://github.com/Maksemqwe123/smart-bot-assistant/blob/main/New_life_3/weather_tg_bot.py)
+5.Run Programs [weather_tg_bot](https://github.com/Maksemqwe123/smart-bot-assistant/blob/main/New_life_3/weather_tg_bot.py)
 
 ```
 python weather_tg_bot.py
